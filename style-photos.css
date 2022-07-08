@@ -1,0 +1,256 @@
+/* ========== Font Families ========== */
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Myeongjo:wght@400;700;800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* ==================== Similar Styling ==================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+    background-size: cover;
+    background-attachment: fixed;
+    background: #CE5937;
+    background: -moz-radial-gradient(center, 
+    #CE5937 0%, 
+    #8D8EC5 100%) no-repeat scroll 0, 0;
+    background: -webkit-radial-gradient(center, 
+    #CE5937 0%, 
+    #8D8EC5 100%) no-repeat scroll 0, 0;
+    background: radial-gradient(ellipse at center, 
+    #CE5937 0%, 
+    #8D8EC5 100%) no-repeat scroll 0, 0;
+}
+
+.card {
+    padding: 50px;
+    margin: 50px;
+    background: -moz-radial-gradient(center, 
+    #ce5a3765 0%, 
+    #bb523288 50%, 
+    #ce5a37f6 100%);
+    background: -webkit-radial-gradient(center, 
+    #ce5a3765 0%, 
+    #bb523288 50%, 
+    #ce5a37f6 100%);
+    background: radial-gradient(ellipse at center, 
+    #ce5a3765 0%, 
+    #bb523288 50%, 
+    #ce5a37f6 100%);
+  }
+
+/* ==================== Column Styling ==================== */
+.leftcolumn {  
+    padding-left: 20px; 
+    float: left;
+    width: 50%;
+  }
+  
+.rightcolumn {
+    float: right;
+    width: 50%;
+    padding-right: 20px;
+} 
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* ==================== Header Styling ==================== */
+.header {
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+  font-size: 72px;
+    text-shadow: 4px 3px 0 #7A7A7A, 2px 2px 2px rgba(206,89,55,0);
+    color: wheat;
+}
+
+.header h2 {
+    font-size: 32px;
+    text-shadow: 4px 3px 0 #7A7A7A, 2px 2px 2px rgba(206,89,55,0);
+    color: wheat;
+}
+
+/* ==================== Footer Styling ==================== */
+  .footer-distributed {
+    background-image: url('/assets/banner-3.JPG');
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: bold;
+    color: wheat;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .footer-distributed .footer-left, #my-name {
+    color: wheat;
+    text-decoration: none;
+  }
+
+  .footer-distributed .footer-left, #my-name:hover{
+    color: crimson;
+    transition: all 0.3s ease-in-out;
+
+}  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-links .link-1:hover {
+    color: crimson;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .footer-distributed .footer-links a:hover {
+    color: crimson;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  
+  .footer-distributed .footer-right a:hover {
+    color: crimson;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+
+  
+/* ====================  Navigation Styling ==================== */
+.navbar {
+    background: url("/assets/banner-2.JPG") repeat;
+    overflow: hidden;
+    border-radius: 25px;
+    top: 0;
+    position: -webkit-sticky; /* ========== Safari ========== */
+    position: sticky;
+}
+  
+
+.navbar a {
+    font-family: 'Roboto', serif;
+    font-weight: 800;
+    float: left;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    width: 25%;
+    border-radius: 25px;
+}
+  
+
+.navbar a:hover {
+    background-color: rgba(255, 0, 51, 0.5);
+    transition: all 0.1s ease-in;
+}
+  
+.active {
+    background-color: rgba(24, 119, 228, 0.5);
+}
+
+/* ========== Text Styling ========== */
+#h1 {
+    font-family: 'Cantarell', sans-serif;
+    color: wheat;
+    text-align: center;
+}
+
+#h2, #h3, #h4, #p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#a {
+    font-size: 32px;
+    color: white;
+    margin-right: 30px;
+    margin-left: 25px;
+}
+
+#img {
+    height: 25rem;
+    width: 25rem;
+}
+
+#date {
+    color: white;
+    font-family: 'Cantarell', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
